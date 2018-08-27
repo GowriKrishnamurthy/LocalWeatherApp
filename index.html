@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
         <!-- Weather icons -->
-        <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
 
         <!-- Font awesome -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -27,6 +27,7 @@
 
     <body>
         <div class="hero">
+
             <!-- navbar -->
             <nav class="navbar">
                 <a
@@ -40,7 +41,51 @@
                     <strong>Local</strong>
                     Weather
                 </a>
+                <span
+                    id="date"
+                    class="lead"
+                >
+                    10:00PM | August 27, 2018
+                </span>
             </nav>
+
+            <!-- Weather section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 weather mx-auto">
+                        <div class="weather-header">
+                            <h1
+                                id="location"
+                                class="text-center display-4"
+                            >
+                                Melbourne, Australia.
+                            </h1>
+                            <div class="row">
+                                <div
+                                    id="description"
+                                    class="description col-6 text-center"
+                                >
+                                    <i
+                                        id="icon-desc"
+                                        class="wi wi-owm-200"
+                                    ></i>
+                                    <p class="desc">thunderstorm</p>
+                                </div>
+                                <div
+                                    id="temperature"
+                                    class="col-6 text-center"
+                                >
+                                    60
+                                    <i
+                                        id="icon-thermometer"
+                                        class="wi wi-thermometer"
+                                    ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Scripts -->
         <script src="script.js"></script>
