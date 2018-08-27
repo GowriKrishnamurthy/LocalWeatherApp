@@ -2,3 +2,34 @@
  * style.css
  * - Add any styles you want here!
  */
+
+body
+{
+    background-image: url("../img/melbourne-city.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: cover;
+    color: white;
+}
+
+.hero
+{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    bottom: 0;
+    /* background-color: rgba(35,35,118,0.5); */
+}
+
+/* navbar */
+.navbar {
+	background-color: rgb(60, 100, 150);
+}
+
+.navbar a {
+	color: white;
+	font-size: 30px;
+}
